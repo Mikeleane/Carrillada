@@ -9,11 +9,11 @@ body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#111}
 .seg + .seg{border-left:1px solid #e5e7eb}
 .seg.active{background:#111;color:#fff}
 
-/* ALWAYS stack: image first, activity below */
+/* Image first, activity below */
 .grid{display:grid;grid-template-columns:1fr;gap:20px;max-width:1200px;margin:0 auto;padding:16px}
 .stage>img{width:100%;height:auto;border-radius:12px;display:block}
 
-/* Responsive 3-column word lists under the image */
+/* Three responsive word columns */
 .columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .col{border:1px solid #eee;border-radius:12px;padding:12px}
 .col h2{margin:.25rem 0 .75rem;font-size:1.05rem}
@@ -22,9 +22,3 @@ body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#111}
 .word{border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:.35rem .65rem;cursor:pointer}
 .word.done{background:#16a34a;color:#fff;border-color:#16a34a}
 .status{min-width:1.25rem;text-align:center}
-
-/* Optional overlay pins (used in Option B) */
-.stage{position:relative}
-.pin{position:absolute;transform:translate(-50%,-50%);width:28px;height:28px;border-radius:50%;border:0;background:#111;color:#fff;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.2)}
-.pin.done{background:#16a34a}
-.box-outline{position:absolute;border:1px dashed rgba(0,0,0,.25);pointer-events:none}
