@@ -3,9 +3,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>H5P Player</title>
-<link rel="stylesheet" href="h5p/h5p-standalone/styles/h5p.css">
-<style>body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0}header{padding:12px 16px;border-bottom:1px solid #eee}main{max-width:1100px;margin:0 auto;padding:16px}</style>
-<header><a href="./" style="text-decoration:none;color:#0366d6">← Home</a><h1 style="margin:.25rem 0 0">H5P Player</h1></header>
-<main><div class="h5p-container" data-content-path="h5p"></div></main>
-<script src="h5p/h5p-standalone/js/h5p-standalone.min.js"></script>
+
+<!-- H5P Standalone via CDN (dist build) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/otacke/h5p-standalone@latest/dist/styles/h5p.css">
+
+<header style="padding:12px 16px;border-bottom:1px solid #eee">
+  <a href="./" style="text-decoration:none;color:#0366d6">← Home</a>
+  <h1 style="margin:.25rem 0 0">H5P Player</h1>
+</header>
+
+<main style="max-width:1100px;margin:0 auto;padding:16px">
+  <!-- Must point to the folder that contains content/ and h5p.json -->
+  <div class="h5p-container" data-content-path="h5p"></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/gh/otacke/h5p-standalone@latest/dist/main.bundle.js"></script>
 </html>
