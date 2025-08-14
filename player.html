@@ -1,13 +1,21 @@
 ﻿<!doctype html>
-<html lang="en"><meta charset="utf-8">
+<html lang="en">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>H5P Embed</title>
+<title>H5P Player</title>
+<link rel="stylesheet" href="h5p/h5p-standalone/dist/styles/h5p.css">
 <style>
-  html,body{height:100%;margin:0} body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif}
-  header{padding:12px 16px;border-bottom:1px solid #eee} main{height:calc(100% - 58px)}
-  iframe{width:100%;height:100%;border:0}
+  body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0}
+  header{padding:12px 16px;border-bottom:1px solid #eee}
+  main{max-width:1100px;margin:0 auto;padding:16px}
 </style>
-<header><a href="./" style="text-decoration:none;color:#0366d6">← Home</a><h1 style="margin:.25rem 0 0">H5P Activity</h1></header>
-<main><iframe src="https://YOUR-H5P-HOST/h5p/embed/12345" allow="microphone; fullscreen" allowfullscreen title="H5P activity"></iframe></main>
-<script src="https://your-h5p-host/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+<header>
+  <a href="./" style="text-decoration:none;color:#0366d6">← Home</a>
+  <h1 style="margin:.25rem 0 0">H5P Player</h1>
+</header>
+<main>
+  <!-- This MUST point to the folder that contains content/ and h5p.json -->
+  <div class="h5p-container" data-content-path="h5p"></div>
+</main>
+<script src="h5p/h5p-standalone/dist/main.bundle.js"></script>
 </html>
