@@ -1,0 +1,39 @@
+﻿{
+  "activities": [{
+    "id": "carrillada",
+    "title": "Carrillada — Speak/Listen",
+    "lang": "en-US",
+    "image": "assets/carrillada.jpg",
+    "alt": "Carrillada pork cheek stew with chips",
+    "hotspots": [
+      {
+        "id": "ingredients",
+        "label": "Ingredients",
+        "x": 25, "y": 56,
+        "prompt": "Choose a word and say it.",
+        "prompt_listen": "Click a word to hear it.",
+        "words": ["pork cheeks","onion","garlic","carrots","red wine","olive oil","bay leaves","thyme"],
+        "answers": ["pork cheeks","onion","garlic","carrots","red wine","olive oil","bay leaves","thyme"]
+      },
+      {
+        "id": "preparation",
+        "label": "Preparation",
+        "x": 50, "y": 56,
+        "prompt": "Say one of the cooking methods.",
+        "prompt_listen": "Click a word to hear it.",
+        "words": ["slow-cooked","braised"],
+        "answers": ["slow cooked","slow-cooked","braised"]
+      },
+      {
+        "id": "adjectives",
+        "label": "Adjectives",
+        "x": 75, "y": 56,
+        "prompt": "Say one adjective.",
+        "prompt_listen": "Click a word to hear it.",
+        "words": ["tender","hearty","savory","filling"],
+        "answers": ["tender","hearty","savory","filling"]
+      }
+    ]
+  }],
+  "languages": ["en-US","en-GB","es-ES"]
+}
