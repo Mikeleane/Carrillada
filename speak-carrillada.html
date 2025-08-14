@@ -2,49 +2,32 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Speak/Listen — Carrillada</title>
+<title>Carrillada — Speak/Listen</title>
 <link rel="stylesheet" href="speak.css">
 <body>
 <header class="site-header">
   <a class="back-link" href="./">← Home</a>
   <h1 id="activity-title">Carrillada — Speak/Listen</h1>
 </header>
-<main class="container">
-  <div class="toolbar">
-    <label>Recognition language:
-      <select id="lang-select" aria-label="Recognition language"></select>
-    </label>
-    <div class="segmented" role="group" aria-label="Mode">
-      <button id="mode-listen" class="seg active" type="button" aria-pressed="true">Listen</button>
-      <button id="mode-speak" class="seg" type="button" aria-pressed="false">Speak</button>
-    </div>
-    <div id="progress" class="progress" aria-live="polite">0 completed</div>
-  </div>
 
-  <figure class="stage" id="stage" aria-label="Hotspot image area">
-    <img id="bg-image" alt="">
-    <figcaption id="image-alt" class="sr-only"></figcaption>
-  </figure>
-</main>
-
-<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-  <div class="modal-content">
-    <button id="close-modal" class="close-btn" aria-label="Close">×</button>
-    <h2 id="modal-title">Practice</h2>
-    <p id="modal-prompt" class="prompt"></p>
-    <div id="wordbank" class="chips" aria-label="Words"></div>
-    <div class="recorder">
-      <button id="start-btn" class="btn">🎤 Start speaking</button>
-      <button id="type-btn" class="btn btn-secondary">⌨️ Type instead</button>
-      <button id="play-target" class="btn btn-secondary" title="Play target" aria-label="Play target word">▶︎</button>
-    </div>
-    <div id="typed-wrapper" class="typed" hidden>
-      <input id="typed-input" type="text" placeholder="Type your answer" aria-label="Type your answer">
-      <button id="typed-submit" class="btn">Check</button>
-    </div>
-    <div id="result" class="result" aria-live="polite"></div>
+<div class="controls">
+  <label>Recognition language:
+    <select id="lang-select" aria-label="Recognition language"></select>
+  </label>
+  <div class="segmented" role="group" aria-label="Mode">
+    <button id="mode-listen" class="seg active" type="button" aria-pressed="true">Listen</button>
+    <button id="mode-speak" class="seg" type="button" aria-pressed="false">Speak</button>
   </div>
+  <div id="progress" class="progress" aria-live="polite">0 completed</div>
 </div>
+
+<main class="grid">
+  <figure class="stage" aria-label="Carrillada image">
+    <img id="bg-image" alt="">
+  </figure>
+
+  <section id="columns" class="columns" aria-label="Vocabulary columns"></section>
+</main>
 
 <script src="speak.js"></script>
 </body>
